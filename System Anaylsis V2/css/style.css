@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7d3ce;
+}
+
+.navbar-brand{
+    color: white;
+    background-color: #F05941;
+    padding: 10px; 
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+} 
+
+.navbar-brand h1 {
+    text-align: center;
+    margin: 20px 0;
+    margin-left: 10px;
+    
+}
+
+.Search {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Search-bar {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(247, 247, 247);
+}
+
+.Search-bar:hover{
+    cursor: pointer;
+}
+
+.Search-butt {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: #F05941
+}
+
+.Search-butt:hover{
+    cursor: pointer;
+}
+
+.Category-Content h2 {
+    margin-bottom: 20px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    margin: 10px;
+    text-align: center;
+    flex: 1 0 20%; 
+    max-width: 150px;
+}
+
+.img-Cate {
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 20px;
+}
+
+.Daily-Discover{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Discover-item{
+    margin: 10px;
+    /* ข้อความใต้ภาพ */
+    text-align: center; 
+    flex: 1 0 20%; 
+}
+
+.img-Dis {
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 20px;
+    border-radius: 20px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f8f8f8ec;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(10, 10, 10);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.main-content {
+    transition: margin-left 0.5s;
+    padding: 20px;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.open-btn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #F05941;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.open-btn:hover {
+    background-color: #e2e2e2;
+    color: black;
+}
+
+/* ผลลัพธ์ที่แสดงผลจากการดึงฐานข้อมูล */
+#search-results {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* จัดเรียงรายการให้ตรงกลาง */
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: calc(33% - 20px); /* แสดง 3 คอลัมน์ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* จัดแนวเนื้อหาให้อยู่ตรงกลาง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.product-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* สำหรับหน้าจอเล็ก */
+@media (max-width: 768px) {
+    .product-item {
+        width: calc(50% - 20px); /* แสดง 2 คอลัมน์ */
+    }
+}
+
+/* สำหรับหน้าจอมือถือ */
+@media (max-width: 480px) {
+    .product-item {
+        width: 100%; /* แสดง 1 คอลัมน์ */
+    }
+}
+
+
+
+
+
+
+
+
+
